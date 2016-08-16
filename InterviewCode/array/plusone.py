@@ -30,3 +30,6 @@ if __name__=="__main__":
     plusOneArr = sol.plusOne(A)
     for i in plusOneArr:
         print i,
+
+
+
