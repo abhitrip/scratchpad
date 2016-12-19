@@ -15,7 +15,7 @@ public class yelp  {
             else
             {
                 j = i+1;
-                while(input.charAt(j)=='e')
+                while(j<len && input.charAt(j)=='e')
                     j++;
                 sb.append('e');
                 i = j;
