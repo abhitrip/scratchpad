@@ -4,13 +4,16 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        dictMap = [-1]*256
-        start,end=0,0
-        maxSub,maxLen="",0
-        for idx,char in enumerate(s):
-            if dictMap[ord(char)]!=-1:
-                start = max(start,dictMap[ord(char)]+1)
-            dictMap[ord(char)]=idx
-            maxLen = max(maxLen,idx-start+1)
+        i,j,maxLen=0,0,0
+        charMap = [-1]*256 # Map of characters with positions
+        for idx,ch in enumerate(s):
+            ascii = ord(ch) # ascii val of character
+            if charMap[ascii]!=-1: # if char has already occured then change i to maximum of previously occured characters
+                i = max(i,charMap[ascii]+1)
+            j+=1  # always increase destination index
+
+            charMap[ascii] = idx
+            maxLen = max(j-i,maxLen) # maxLen is j-i
+
         return maxLen
 
