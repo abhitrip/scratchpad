@@ -3,9 +3,9 @@ public class yelp  {
     public String removeDupE(String input)
     {
         StringBuilder sb = new StringBuilder();
-        int i=0,j=1;
+        int i=0,j=0;
         int len = input.length();
-        while(i<len && j<len)
+        while(i<len)
         {
             if(input.charAt(i)!='e')
             {
@@ -25,7 +25,7 @@ public class yelp  {
     }
 
     public static void main(String[] args) {
-        String test = "abceeeeed";
+        String test = "abceeee";
         yelp obj = new yelp();
         System.out.println(obj.removeDupE(test));
     }
