@@ -1,5 +1,6 @@
 *.class
 *.out
+*.pyc
 google1.java
 google2.java
 yelp.py
