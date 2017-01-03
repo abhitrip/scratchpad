@@ -14,7 +14,6 @@ class Solution(object):
                     return True
             bucketmap[buckidx] = num
             if len(bucketmap)>k:
-                del bucketmap[nums[idx-k]/t if t!=0 else nums[idx-k]]
-
+                del bucketmap[nums[idx-k]/t if t!=0 else nums[idx-k]]        
         return False
 
