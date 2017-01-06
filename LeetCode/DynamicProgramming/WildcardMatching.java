@@ -27,7 +27,8 @@ public class WildcardMatching{
 
         boolean dp[][]= new boolean[s.length()+1][widx+1];
         if (pat[0]=='*' && widx>0)
-            dp[0][0]=true;
+            dp[0][1]=true;
+        dp[0][0] = true;
 
         for(int i=1;i<dp.length;i++)
         {
@@ -47,7 +48,7 @@ public class WildcardMatching{
     }
     public static void main(String[] args) {
         WildcardMatching wm = new WildcardMatching();
-        String s = "aa";
+        String s = "a";
         String p = "a";
         System.out.println(wm.isMatch(s, p));
     }
