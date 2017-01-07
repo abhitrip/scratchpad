@@ -37,6 +37,7 @@ class Solution(object):
                 right = mid
         return nums[left]
 
+
 if __name__=="__main__":
     sol = Solution()
     arr = [5,6,7,0,1,2,4]
