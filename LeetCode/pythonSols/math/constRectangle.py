@@ -8,7 +8,7 @@ class Solution(object):
         start = int(math.sqrt(area))
         while start>0:
             if area%start==0 : 
-                return [area/start start]
+                return [area/start, start]
             start-=1
         return res
         

@@ -1,3 +1,4 @@
+import collections
 class Solution(object):
     def longestSubstring(self, s, k):
         """

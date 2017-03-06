@@ -17,4 +17,3 @@ class Solution(object):
                     maxLen = max(maxLen, idx-left  if not stack else idx-stack[-1])
 
         return maxLen
-
